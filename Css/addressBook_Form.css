@@ -130,7 +130,7 @@ textarea{
     flex-direction: row;
     background:#FFFF;
     margin-left: 80px;
-    margin-top: 50px;
+    margin-top: 60px;
 
 }
 .city-input{
@@ -176,4 +176,10 @@ select{
 
 .ziplable{
     margin-left: 45px;
+}
+
+.error{
+    margin-left: 400px;
+    color: red;
+    font: italic;
 }

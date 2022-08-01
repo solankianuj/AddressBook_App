@@ -4,43 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="http://localhost:58828/assets/logo.png">
+    <link rel="shortcut icon" href="http://localhost:58567/assets/logo.png">
     <title>ADDRESS BOOK FORM</title>
-    <link rel="stylesheet" href="http://localhost:58828/Css/addressBook_Form.css">
+    <link rel="stylesheet" href="http://localhost:58567/Css/addressBook_Form.css">
+    <script src="http://localhost:58567/JS/addressBook_Form.js"></script>
    
 </head>
 <body>
-    <div class="screen">
+    <div class="screen" >
         <header class="header-content">
-                <img class="bookimg" src="http://localhost:58828/assets/logo.png" alt="" >
+                <img class="bookimg" src="http://localhost:58567/assets/logo.png" alt="" >
                    <div class="Address-text">
                     <span class="addresstxt">ADDRESS</span>
                     <span class="booktxt">BOOK</span>
                    </div>
         </header>
         <div class="main-content">
+            <form action="" >
             <header class="main-content-header">
                 <span class="formText">PERSON ADDRESS DETAILS</span>
-                <input type="image" class="closeimg" src="http://localhost:58828/assets/Close-Button.png" alt="close" >
+                <input type="image" class="closeimg" src="http://localhost:58567/assets/Close-Button.png" alt="close" >
             </header>
             <div class="A-lable">
                 <label for="name">Full Name</label>
             </div>
             <div class="D-input">
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" oninput="nameValidation()" >
+                <error class="error" for="error" id="name-error"><p></p></error>
             </div>
             <div class="A-lable">
                 <label for="phone">Phone Number</label>
             </div>
             <div class="D-input">
-                <input type="number" name="phone" id="phone">
+                <input type="number" name="phone" id="phone" oninput="numberValidation()" >
+                <error class="error" for="error" id="num-error" value="error"><p></p></error>
             </div>
 
             <div class="A-lable">
                 <label for="Address">Address</label>
             </div>
             <div class="D-input">
-                <textarea type="text" name="address" id="address"></textarea>
+                <textarea type="text" name="address" id="address" oninput="addressvalidation() "></textarea>
+                <error class="error" for="error" id="add-error" value="error"><p></p></error>
             </div>
 
             <div class="selection-input">
@@ -98,9 +103,10 @@
 
 
             </div>
+           
 
         </div>
-   
+        </form>
    
     </div> 
 </body>
