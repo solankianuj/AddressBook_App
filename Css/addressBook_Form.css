@@ -92,3 +92,88 @@
     background:  #e9ecef 0% 0% no-repeat padding-box;
     opacity: 1;
 }
+.A-lable{
+    width: 200px;
+    height: 24px;
+    text-align: left;
+    font:  normal normal normal 18px/24px Roboto;
+    color: #42515F;
+    opacity: 1;
+    margin-left: 80px;
+    margin-top: 20px;
+
+}
+.D-input{
+    width: 600px;
+    height: 30px;
+    margin-left: 80px;
+    background: #FFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    opacity: 1;
+   
+
+}
+input{
+    width: 600px;
+    height: 30px;  
+  
+}
+textarea{
+    width: 600px;
+    height: 60px;  
+}
+
+.selection-input{
+    
+    display: flex;
+    flex-direction: row;
+    background:#FFFF;
+    margin-left: 80px;
+    margin-top: 50px;
+
+}
+.city-input{
+    display: flex;
+    flex-direction: column;
+}
+
+select{
+    width: 165px;
+    height: 50px;
+    background: #FFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    opacity: 1;
+   
+
+}
+
+.stateIp{
+    width: 165px;
+    height: 50px;
+    background: #FFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    opacity: 1;
+    margin-left: 45px;
+
+}
+
+.statelable{
+    margin-left: 45px;
+}
+
+.zipIp{
+    width: 165px;
+    height: 45px;
+    background: #FFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 3px;
+    opacity: 1;
+    margin-left: 45px;
+}
+
+.ziplable{
+    margin-left: 45px;
+}
