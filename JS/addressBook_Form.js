@@ -69,8 +69,16 @@ function submitData(){
 
     }
 
+    var addressBookList=[];
+   addressBookList= JSON.parse(localStorage.getItem("addressBookList"));
 
+    if (addressBookList==null) {
+        var addressBookList=[];
+    }
+    
+    addressBookList.push(addressBookData);
 
-    alert(JSON.stringify(addressBookData))
+    localStorage.setItem("addressBookList",JSON.stringify(addressBookList));
+    alert(JSON.stringify(addressBookList))
 
 }
