@@ -183,3 +183,29 @@ select{
     color: red;
     font: italic;
 }
+footer{
+    
+    display: flex;
+    flex-direction: row;
+    background:#FFFF;
+    margin-top: 20px;
+    
+}
+
+.add{
+    width: 100px;
+    height: 30px;
+    font: normal normal normal 15px/20px Roboto;
+    margin-left: 400px;
+    color: #42515F;
+    opacity: 1;
+}
+.reset{
+    width: 100px;
+    height: 30px;
+    font: normal normal normal 15px/20px Roboto;
+    margin-left: 70px;
+    color: #42515F;
+    opacity: 1;
+
+}
