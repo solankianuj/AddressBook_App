@@ -50,3 +50,27 @@ function resetvalues(){
     
 
 }
+
+function submitData(){
+    var Name=document.getElementById("name").value;
+    var phoneNumber=document.getElementById("phone").value;
+    var Address=document.getElementById("address").value;
+    var City=document.getElementById("city").value;
+    var State=document.getElementById("state").value;
+    var zipcode=document.getElementById("zip").value;
+
+    var addressBookData={
+        "Name":Name,
+        "Phone Number":phoneNumber,
+        "Address":Address,
+        "Zip Code":zipcode,
+        "City":City,
+        "State":State
+
+    }
+
+
+
+    alert(JSON.stringify(addressBookData))
+
+}
