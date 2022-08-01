@@ -43,3 +43,10 @@ function nameValidation() {
 
     
 }
+
+
+function resetvalues(){
+    document.getElementById("myform").reset();
+    
+
+}
